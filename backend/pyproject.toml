@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["hungcaypccom <30574081+hungcaypccom@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uvicorn = "^0.21.0"
+fastapi = "^0.94.0"
+psycopg2 = "^2.9.5"
+sqlmodel = "^0.0.8"
+sqlalchemy = "1.4.41"
+asyncpg = "^0.27.0"
+alembic = "^1.10.2"
+aiohttp = "^3.8.4"
+aiofiles = "^23.1.0"
+jose = "^1.0.0"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+bcrypt = "^4.0.1"
+fastapi-csrf-protect = "^0.2.2"
+fastapi-limiter = "^0.1.5"
+aioredis = "^2.0.1"
+
+ 
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start= "app.main:start"
